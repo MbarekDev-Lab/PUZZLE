@@ -1,6 +1,7 @@
 
 // Source image 
-let source;
+let source ;
+
 
 // Tiles configuration
 let tiles = [];
@@ -10,10 +11,9 @@ let w, h;
 
 // Order of tiles
 let board = [];
-
 // Loading the image
 function preload() {
-  source = loadImage("bot1.png");
+  source = loadImage("bot.png");
 }
 
 function setup() {
@@ -40,7 +40,7 @@ function setup() {
   tiles.pop();
   board.pop();
   // -1 means empty spot
-  board.push(-1);
+  x= board.push(-1);
   
   // Shuffle the board
   simpleShuffle(board);
